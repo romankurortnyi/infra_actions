@@ -70,7 +70,7 @@ deploy:
         key: ${{ secrets.SSH_KEY }}
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull <roman_kurortnyi>/<infra_actions>
+          sudo docker pull roman_kurortnyi/infra_actions
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 <roman_kurortnyi>/<infra_actions>
+          sudo docker run --rm -d -p 5000:5000 roman_kurortnyi>/<infra_actions
